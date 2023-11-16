@@ -25,7 +25,9 @@ main {
 }
 .container {
     width: 80rem;
-    height: 80rem;
+    height: 67rem;
+    border-radius: 2rem;
+    border: none;
 
     display: flex;
     flex-direction: column;
@@ -38,42 +40,97 @@ nav {
     text-align: center;
     justify-content: space-between;    
 
+    color: #fff;
     margin-top: 5rem;
 }
 
 nav h1 {
-    font: 400 3.0rem 'black ops one';
-    padding-left: 18rem;
+    font: 400 4rem 'black ops one';
+    padding-left: 22rem;
 
-    color: #fff;
 }
 
-nav select {
+#select {
     margin-right: 2rem;
+    padding: 0.4rem;
+
+    border: none;
+    border-radius: 1.2rem;
+
+    text-align: center;
+    font: 400 1.5rem 'Arial';
+
+    background-color: var(--botao);
+    color: #000;
+
+    outline: none;
+}
+
+#select option {
+    color: #000;
+    cursor: pointer;
+}
+
+#select option:hover {
+    transition: .4s;
+    background-color: var(--cor-fundo);
+}
+
+
+.container ul {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    color: #fff;
 }
 
 .container-li {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 
     align-items: start;
-    justify-content: center;
+    justify-content: space-around;
 
+    gap: 10rem;
     margin-top: 8rem;
-    margin-left: 8rem;
 }
 
 .container-li h2 {
-    font: 400 2.3rem 'black ops one';
+    font: 400 3rem 'black ops one';
     color: #fff;
 }
 
-.container ul {
-    margin-top: 1.5rem;
-    margin-left: 1rem;
+.container-li a {
+    text-decoration: none;
     color: #fff;
+    font: bolder 2rem 'Arial';
+    transition: all .2s ease-in-out;
 }
+
+.container-li a:hover {
+    transition: .4s;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #ffa3fd;
+}
+
 
 ul li {
     margin-top: 0.5rem;
 }
+
+.container-photo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    margin-top: 4.5rem;
+}
+
+#logo { 
+    width: 15rem;
+    height: 10rem;
+}
+
+
