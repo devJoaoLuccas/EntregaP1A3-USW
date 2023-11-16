@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+    --cor-fundo: #865dff;
+    --cor-card: #191825;
+    --cor-secundaria: #514869;
+    --botao: #ffa3fd;
+    --branco: #ffffffdc;
+}
+
+
+main {
+    width: auto;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--cor-fundo);
+}
+.container {
+    width: 80rem;
+    height: 80rem;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--cor-card);
+}
+
+nav {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;    
+
+    margin-top: 5rem;
+}
+
+nav h1 {
+    font: 400 3.0rem 'black ops one';
+    padding-left: 18rem;
+
+    color: #fff;
+}
+
+nav select {
+    margin-right: 2rem;
+}
+
+.container-li {
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+    justify-content: center;
+
+    margin-top: 8rem;
+    margin-left: 8rem;
+}
+
+.container-li h2 {
+    font: 400 2.3rem 'black ops one';
+    color: #fff;
+}
+
+.container ul {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    color: #fff;
+}
+
+ul li {
+    margin-top: 0.5rem;
+}
