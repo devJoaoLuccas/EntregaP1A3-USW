@@ -119,6 +119,17 @@ header {
     background-color: var(--cor-secundaria);
     border: none;
     border-radius: 2rem;
+    color: #fff;
+
+    transition: all .4s ease-in-out;
+}
+
+.card:hover {
+    transition: .4s;
+    transform: scale(1.1);
+
+    background-color: #ffa3fd;
+    color: #000;
 }
 
 .card-container {
@@ -126,16 +137,21 @@ header {
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
+
+    cursor: pointer;
 }
 
+
 .card-container-photo {
-    width: 20rem;
-    height: 12rem;
+    width: 15rem;
+    height: 12.5rem;
 }
 
 .card-container-infos h2 {
     margin-top: 2rem;
     text-align: center;
+
+    font: 100 1.8rem 'black ops one';
 }
 
 @media only screen and (max-width: 768px) {
