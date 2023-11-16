@@ -4,6 +4,16 @@
     font-family: 'black ops one';
     font-weight: 100;
 }
+
+:root {
+    font-size: 62.5%;
+    --cor-fundo: #865dff;
+    --cor-card: #191825;
+    --cor-secundaria: #514869;
+    --botao: #ffa3fd;
+    --branco: #ffffffdc;
+}
+
 body {
     background-color: #865dff;
 }
@@ -87,70 +97,61 @@ header {
     height: fit-content;
 
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20rem;
+    margin-top: 20rem;
+}
+
+.grupo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    gap: 20rem;
+}
+
+.card {
+    width: 20rem;
+    height: 20rem;
+
+    background-color: var(--cor-secundaria);
+    border: none;
+    border-radius: 2rem;
+    color: #fff;
+
+    transition: all .4s ease-in-out;
+}
+
+.card:hover {
+    transition: .4s;
+    transform: scale(1.1);
+
+    background-color: #ffa3fd;
+    color: #000;
+}
+
+.card-container {
+    display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.container {
-
-    display: flex;
-    flex-direction: column;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    
-    background-color: #2e2840;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 20px;
-
-    font-family: 'Roboto', Helvetica, sans-serif;
-    font-size: 15px;
-}
-
-.container-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    margin-top: 10px;
-    padding: 10px 40px 5px 40px;
-}
-
-.container-row-logo img {
-    width: 50px;
-    height: 50px;
-}
-
-.container-row-plataforma {
-    font-size: 18px;
-    font-weight: bolder;
-
-    color: #fff;
-}
-
-.container-row-button input {
- 
-    height: 50px;
-    width: 100px;
-
-    font-weight: bolder;
-    font-size: 15px;
-
-    border-radius: 15px;
-    background-color: #ffa3fd;
+    margin-top: 2rem;
 
     cursor: pointer;
-    border: none;
 }
 
-.container-row-button input:hover {
-        transition: .4s;
-        background-color: #fccbfc;
+
+.card-container-photo {
+    width: 15rem;
+    height: 12.5rem;
 }
 
-#button-principal:hover {
-    transition: .2s;
-    background-color: #fccbfc;
+.card-container-infos h2 {
+    margin-top: 2rem;
+    text-align: center;
+
+    font: 100 1.8rem 'black ops one';
 }
 
 @media only screen and (max-width: 768px) {

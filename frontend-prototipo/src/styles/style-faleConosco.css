@@ -106,8 +106,8 @@ form {
     border: none;
 }
 
-.card-form::placeholder {
-    color: #9c8f8f;
+.card-form-text::placeholder, .card-form-row textarea::placeholder {
+    color: #acaaaa;
 }
 
 .card-form-text:focus {
