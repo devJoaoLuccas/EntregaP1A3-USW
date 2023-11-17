@@ -29,7 +29,7 @@ body {
     padding: 3rem;
     
     
-    height: 55rem;
+    height: 56rem;
     max-width: 100%;
     width: 70rem;
 
@@ -104,9 +104,17 @@ header h1 {
     margin-bottom: 0.6rem;
 }
 
-.card-infos-column span {
+.card-info-span {
     font-weight: bolder;
-    color: var(--botao)
+    color: var(--botao);
+    transition: all .4s ease-in-out;
+}
+
+.card-info-span:hover {
+    transition: .4s;
+    color: var(--cor-fundo);
+    font-size: 2rem;
+    cursor: default;
 }
 
 .card-infos-row input::placeholder {
@@ -149,9 +157,25 @@ header h1 {
 }
 
 @media only screen and (max-width: 768px) {
+
+    .card {
+        height: 71rem;
+        width: 50rem;
+    }
+
     .card-infos {
-        display: flex;
         flex-direction: row;
-        gap: 0rem;
+        gap: 3rem;
+        margin-top: 1rem;
+    }
+
+    .card-infos-column label {
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+    }
+
+    .card-infos-column input {
+        height: 1.5rem;
+        width: 25rem;
     }
 }
