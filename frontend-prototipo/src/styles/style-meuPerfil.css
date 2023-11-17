@@ -29,7 +29,7 @@ body {
     padding: 3rem;
     
     
-    height: 63rem;
+    height: 55rem;
     max-width: 100%;
     width: 70rem;
 
@@ -55,41 +55,64 @@ header h1 {
 
 .card-infos {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-    margin-top: 10rem;
+    margin-top: 3rem;
     gap: 5rem;
 }
 
-.card-infos-row {
+.card-infos-column {
     display: flex;
+    flex-direction: column;
     align-items: start;
     justify-content: start;
+
+    font: 400 1.5rem 'Arial';
+    color: #fff;
 
     margin-left: 3rem;
 }
 
-.card-infos-row label {
+.card-infos-column label {
     color: #fff;
     font: 400 1.5rem 'Arial';
 
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
     margin-right: 1rem;
 }
 
-.card-infos-row input {
+.card-infos-column input {
     border: none;
     background: none;
     
     border-bottom: solid .1rem #fff;
-    padding-left: 0.5rem;
+    padding-left: 0.2rem;
 
-    width: 40rem;
+    width: 30rem;
+    height: 4rem;
     cursor:not-allowed;
+}
+
+.card-infos-column h2 {
+    margin-bottom: 1.5rem;
+}
+
+.card-infos-column li {
+    margin-left: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.card-infos-column span {
+    font-weight: bolder;
+    color: var(--botao)
 }
 
 .card-infos-row input::placeholder {
     color: #fff;
 }
+
 
 .footer {
     display: flex;
@@ -97,9 +120,10 @@ header h1 {
     align-items: center;
     justify-content: space-between;
 
-    margin-top: 17rem;
+    margin-top: 5rem;
     
 }
+
 
 .logo {
     width: 15rem;
@@ -122,4 +146,12 @@ header h1 {
     transition: .4s;
     background-color: var(--cor-fundo);
     color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .card-infos {
+        display: flex;
+        flex-direction: row;
+        gap: 0rem;
+    }
 }
