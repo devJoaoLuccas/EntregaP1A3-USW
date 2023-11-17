@@ -34,7 +34,7 @@ main {
     border-radius: 3rem;
 
     width: 80rem;
-    height: 62rem;
+    height: 63rem;
 
     background-color: var(--cor-card);
 }
@@ -128,8 +128,11 @@ main {
     height: 4rem;
     
     cursor: pointer;
-    font: 400 1.8rem 'black ops one';
     text-decoration: none;
+    
+    align-items: center;
+    justify-content: center;
+    font: 400 1.8rem 'black ops one';
 
     border: none;
     border-radius: 1rem;
@@ -142,4 +145,30 @@ main {
     transition: .4s;
     background-color: var(--cor-fundo);
     color: #fff;
+}
+
+.container-infosP {
+        display: flex;
+        flex-direction: column;
+    
+        gap: 2rem;
+}
+
+.container-footerP {
+        display: flex;
+        align-items: center;
+        gap: 13rem;
+
+}
+
+#inputPlataform {
+    padding-left: 1rem;
+    background-color: var(--cor-secundaria);
+    cursor: not-allowed;
+    
+    border: none;
+    border-radius: 0.7rem;
+
+    height: 2.5rem;
+    width: 29rem;
 }
