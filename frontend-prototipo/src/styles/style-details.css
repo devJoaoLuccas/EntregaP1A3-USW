@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+    --cor-fundo: #865dff;
+    --cor-card: #191825;
+    --cor-secundaria: #514869;
+    --botao: #ffa3fd;
+    --branco: #ffffffdc;
+}
+
+
+main {
+    width: auto;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--cor-fundo);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 5rem;
+    border: none;
+    border-radius: 3rem;
+
+    width: 80rem;
+    height: 63rem;
+
+    background-color: var(--cor-card);
+}
+
+.container nav {
+    font: 400 2.8rem 'black ops one';
+    color: #fff;
+
+    margin-top: 5rem;
+}
+
+.container-infos {
+    display: flex;
+    flex-direction: row;
+
+    gap: 5rem;
+}
+
+.container-infos-photo {
+    width: 30rem;
+    height: 30rem;
+
+    border: none;
+    border-radius: 2rem;
+    
+}
+
+.container-infos-game {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.8rem;
+
+    font: 200 1.8rem 'Arial';
+    color: #fff;
+}
+
+.container-infos-game input {
+    padding-left: 0.8rem;
+    background-color: var(--cor-secundaria);
+    cursor: not-allowed;
+    
+    border: none;
+    border-radius: 0.5rem;
+
+    height: 2.5rem;
+    width: 25rem;
+
+}
+
+.container-infos-game input::placeholder {
+    font: 400 1.3rem 'Arial';
+    color: #fff;
+}
+
+.container-infos-game input[type="date"] {
+    color: #fff;
+}
+
+.container-infos-game select {
+    border: none;
+    border-radius: 0.5rem;
+    padding-left: 0.8rem;
+
+    background-color: var(--cor-secundaria);
+    color: #fff;
+    cursor: not-allowed;
+
+    width: 25.8rem;
+    height: 2.5rem;
+}
+
+.container-infos-game label {
+    margin-top: 0.5rem;
+}
+
+.container-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 13rem;
+}
+
+.container-footer-button { 
+    display: flex;
+    gap: 2rem;
+}
+
+.container-footer-button button, a { 
+    width: 15rem;
+    height: 4rem;
+    
+    cursor: pointer;
+    text-decoration: none;
+    
+    align-items: center;
+    justify-content: center;
+    font: 400 1.8rem 'black ops one';
+
+    border: none;
+    border-radius: 1rem;
+
+    background-color: var(--botao);
+    transition: all .4s ease-in;
+}
+
+.container-footer-button button:hover, a:hover{
+    transition: .4s;
+    background-color: var(--cor-fundo);
+    color: #fff;
+}
+
+.container-infosP {
+        display: flex;
+        flex-direction: column;
+    
+        gap: 2rem;
+}
+
+.container-footerP {
+        display: flex;
+        align-items: center;
+        gap: 13rem;
+
+}
+
+#inputPlataform {
+    padding-left: 1rem;
+    background-color: var(--cor-secundaria);
+    cursor: not-allowed;
+    
+    border: none;
+    border-radius: 0.7rem;
+
+    height: 2.5rem;
+    width: 29rem;
+}

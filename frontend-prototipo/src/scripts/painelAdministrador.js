@@ -45,6 +45,16 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "/frontend-prototipo/src/pages/adicionar-plataforma.html";
     });
 
+    var platLink = document.getElementById('link-editDel');
+
+    
+    platLink.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        window.location.href = "/frontend-prototipo/src/pages/editar-deletar.html";
+    });
+
+
     var voltarLink = document.getElementById('voltar');
 
     

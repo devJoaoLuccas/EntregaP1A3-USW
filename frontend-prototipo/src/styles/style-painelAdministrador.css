@@ -32,7 +32,7 @@ body{
     display: flex;
     flex-direction: column;
 
-    width: 73.8rem;
+    width: 73.8;
     height: 70rem;
 
     background-color: #111010;
@@ -72,7 +72,7 @@ body{
 }
 
 button {
-    padding: 20px 0px 20px 0px;
+    padding: 20px 30px 20px 30px;
 
     margin-bottom: 35px;
 
@@ -84,6 +84,30 @@ button {
     font-size: 25px;
 
     cursor: pointer;
+
+}
+
+.botoes-estilo {
+    padding: 20px 30px 20px 30px;
+
+    margin-bottom: 35px;
+
+    border-radius: 10px;
+
+    background-color: #ffa3fd;
+    color: #191825;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    
+}
+
+.botoes-estilo:hover {
+    transition: .4s;
+    background: #865dff;
+    color: #fff;
 }
 
 button:hover {
